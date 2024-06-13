@@ -10,7 +10,7 @@ class Jugador extends Model
 {
     use HasFactory;
     protected $table = "jugadores";
-    protected $primary = 'rut';
+    protected $primaryKey = 'rut';
     protected $keyType = 'string';
     public $incrementing = false;
     public $timestamps = false;

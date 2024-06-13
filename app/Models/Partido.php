@@ -14,7 +14,7 @@ class Partido extends Model
 
     public function equipos(): BelongsToMany
     {
-        return $this->BelongsToMany(Equipo::class)->withPivot(['es_ganador']);
+        return $this->BelongsToMany(Equipo::class)->withPivot(['ganador']);
     }
 
     
