@@ -2,6 +2,11 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EquiposController;
+use App\Http\Controllers\JugadoresController;
+use App\Http\Controllers\CampeonatosController;
+use App\Http\Controllers\PartidosController;
+use App\Http\Controllers\ResultadosController;
 
 /*
 |--------------------------------------------------------------------------

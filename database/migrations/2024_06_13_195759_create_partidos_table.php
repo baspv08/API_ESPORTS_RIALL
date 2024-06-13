@@ -21,6 +21,8 @@ return new class extends Migration
             $table->unsignedBigInteger('campeonato_id')->nullable(false);
 
             $table->foreign('campeonato_id')->references('id')->on('campeonatos');
+            $table->foreignId('equipo_local_id')->constrained('equipos');
+            $table->foreignId('equipo_visitante_id')->constrained('equipos');
             //$table->timestamps();
         });
     }
